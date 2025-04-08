@@ -8,5 +8,5 @@
     <project name = "scratchpad" path = "source/scratchpad" revision = "bdc4ee99a57b7afef9649bfbcb61905c12417588" remote = "origin"/>
 
     <!-- renovate: currentValue="master" -->
-    <project name = "photosort" path = "source/photosort" revision = "1d10f103b2a960c4d7035441416bd38d6fbdf792" remote = "origin"/>
+    <project name = "photosort" path = "source/photosort" revision = "39b424c04a677c616d8b556004ce93b4aa8b3ceb" remote = "origin"/>
 </manifest>
