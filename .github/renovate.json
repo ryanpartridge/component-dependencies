@@ -7,9 +7,8 @@
       "description": "Update a git SHA",
       "fileMatch": ["component_manifest.xml"],
       "matchStrings": [
-        "<project\\s+name\\s*=\\s*\"(?<depName>.+?)\".+revision\\s*=\\s*\"(?<currentDigest>.+?)\".*\\/>"
+        "<!--\\s+renovate:\\s+currentValue\\s*=\\s*\"(?<currentValue>.+?)\"\\s+-->\\s+<project\\s+name\\s*=\\s*\"(?<depName>.+?)\".+revision\\s*=\\s*\"(?<currentDigest>.+?)\".*\\/>"
       ],
-      "currentValueTemplate": "main",
       "packageNameTemplate": "https://github.com/ryanpartridge/{{{ depName }}}",
       "datasourceTemplate": "git-refs"
     }
