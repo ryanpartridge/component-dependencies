@@ -1,0 +1,17 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:best-practices"],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "description": "Update a git SHA",
+      "fileMatch": ["component_manifest.xml"],
+      "matchStrings": [
+        "<project\\s+name\\s*=\\s*\"(?<depName>.+?)\".+revision\\s*=\\s*\"(?<currentDigest>.+?)\".*\\/>"
+      ],
+      "currentValueTemplate": "main",
+      "packageNameTemplate": "https://github.com/ryanpartridge/{{{ depName }}}",
+      "datasourceTemplate": "git-refs"
+    }
+  ]
+}
