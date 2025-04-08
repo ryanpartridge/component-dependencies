@@ -4,5 +4,5 @@
     <remote fetch = "ssh://git@github.com/ryanpartridge" name = "origin"/>
 
     <!-- list all the required repositories -->
-    <project name = "scratchpad" path = "source/scratchpad" revision = "2d7510cf875c580b79e78ce538aaa14d846e1bce" remote = "origin"/>
+    <project name = "scratchpad" path = "source/scratchpad" revision = "bdc4ee99a57b7afef9649bfbcb61905c12417588" remote = "origin"/>
 </manifest>
