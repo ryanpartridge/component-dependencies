@@ -1,11 +1,15 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:best-practices"],
+  "extends": [
+    "config:best-practices"
+  ],
   "customManagers": [
     {
       "customType": "regex",
       "description": "Update a git SHA",
-      "fileMatch": ["component_manifest.xml"],
+      "managerFilePatterns": [
+        "/component_manifest.xml/"
+      ],
       "matchStrings": [
         "<!--\\s+renovate:\\s+currentValue\\s*=\\s*\"(?<currentValue>.+?)\"\\s+-->\\s+<project\\s+name\\s*=\\s*\"(?<depName>.+?)\".+revision\\s*=\\s*\"(?<currentDigest>.+?)\".*\\/>"
       ],
