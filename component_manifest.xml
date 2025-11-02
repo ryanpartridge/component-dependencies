@@ -5,7 +5,7 @@
 
     <!-- list all the required repositories -->
     <!-- renovate: currentValue="main" -->
-    <project name = "scratchpad" path = "source/scratchpad" revision = "f891b4d7774c8f27ce09881ce50593d73f453d70" remote = "origin"/>
+    <project name = "scratchpad" path = "source/scratchpad" revision = "9d6637b1213170751bf3729272a1582c5d40f550" remote = "origin"/>
 
     <!-- renovate: currentValue="master" -->
     <project name = "photosort" path = "source/photosort" revision = "39b424c04a677c616d8b556004ce93b4aa8b3ceb" remote = "origin"/>
